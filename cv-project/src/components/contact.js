@@ -10,8 +10,8 @@ class Contact extends Component {
                 email: '',
                 phone: '',
                 city: '',
-                LinkedIn: '',
-                Github: '',
+                linkedin: '',
+                github: '',
                 edit: false
 
             ]
@@ -35,7 +35,7 @@ class Contact extends Component {
     }
     handleLinkedInChange = e => {
         this.setState({
-            linkedIn: e.target.value
+            linkedin: e.target.value
         })
     }
     handleGithubChange = e => {
@@ -60,4 +60,25 @@ class Contact extends Component {
             edit
         } = this.state;
 
-        return 
+        return (
+            <div id="Contact">
+                <h3>CONTACT</h3>
+                <div className = "email">
+                    <p>{email ? email: 'john@devjobs.com'}</p>
+                </div>
+                <div className = "phone">
+                    <p>{phone ? phone: '555-551-8159'}</p>
+                </div>
+                <div className = "city">
+                    <p>{city ? city: 'San Antonio, TX'}</p>
+                </div>
+                <div className = "linkedin">
+                        <a href={linkedin ? linkedin: 'linkedin.com/in/user-name'}>LinkedIn</a>
+                </div>
+                <div className = "github">
+                        <a href={github ? github: 'github.com/username'}>Github</a>
+                </div>
+            </div>
+        )
+
+        export default Contact
