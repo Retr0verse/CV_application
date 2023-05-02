@@ -63,21 +63,33 @@ class Contact extends Component {
         return (
             <div id="Contact">
                 <h3>CONTACT</h3>
-                <div className = "email">
-                    <p>{email ? email: 'john@devjobs.com'}</p>
+                <div className="email">
+                    <p>{email ? email : 'john@devjobs.com'}</p>
                 </div>
-                <div className = "phone">
-                    <p>{phone ? phone: '555-551-8159'}</p>
+                <div className="phone">
+                    <p>{phone ? phone : '555-551-8159'}</p>
                 </div>
-                <div className = "city">
-                    <p>{city ? city: 'San Antonio, TX'}</p>
+                <div className="city">
+                    <p>{city ? city : 'San Antonio, TX'}</p>
                 </div>
-                <div className = "linkedin">
-                        <a href={linkedin ? linkedin: 'linkedin.com/in/user-name'}>LinkedIn</a>
+                <div className="linkedin">
+                    <a href={linkedin ? linkedin : 'linkedin.com/in/user-name'}>LinkedIn</a>
                 </div>
-                <div className = "github">
-                        <a href={github ? github: 'github.com/username'}>Github</a>
+                <div className="github">
+                    <a href={github ? github : 'github.com/username'}>Github</a>
                 </div>
+                < button className="edit-toggle" type="button" onClick={this.toggleEdit}>Edit</button>
+
+                {edit &&
+                <form id="contact-edit" className="edit-form">
+                    <label htmlFor="email">email</label>
+                    <input
+                    id="email"
+                    type="text"
+                    placeholder="john@devjobs.com"
+                    onChange={this.handleEmailChange}
+                    />
+                    </form>}
             </div>
         )
 
