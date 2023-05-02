@@ -43,3 +43,21 @@ class Contact extends Component {
             github: e.target.value
         })
     }
+    toggleEdit = () => {
+        this.setState(prevState => ({
+            edit: !prevState.edit
+        }))
+
+    }
+
+    render() {
+        const {
+            email,
+            phone,
+            city,
+            LinkedIn,
+            Github,
+            edit
+        } = this.state;
+
+        return 
