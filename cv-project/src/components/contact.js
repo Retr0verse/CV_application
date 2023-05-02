@@ -5,8 +5,7 @@ class Contact extends Component {
         super();
 
         this.state = {
-            Contact: '',
-            Contact: [
+         
                 email: '',
                 phone: '',
                 city: '',
@@ -14,7 +13,6 @@ class Contact extends Component {
                 github: '',
                 edit: false
 
-            ]
         }
     }
 
@@ -86,11 +84,35 @@ class Contact extends Component {
                     <input
                     id="email"
                     type="text"
-                    placeholder="john@devjobs.com"
                     onChange={this.handleEmailChange}
+                    />
+                    <label htmlFor="phone">phone</label>
+                    <input
+                    id="phone"
+                    type="text"
+                    onChange={this.handlePhoneChange}
+                    />
+                    <label htmlFor="city">city</label>
+                    <input 
+                    id="city"
+                    type="text"
+                    onChange={this.handleCityChange}
+                    />
+                    <label htmlFor="linkedin">linkedin</label>
+                    <input 
+                    id="linkedin"
+                    type="link"
+                    onChange={this.handleLinkedInChange}
+                    />
+                    <label htmlFor="github">github</label>
+                    <input
+                    id="github"
+                    type="link"
+                    onChange={this.handleGithubChange}
                     />
                     </form>}
             </div>
         )
-
+                }
+            }
         export default Contact
