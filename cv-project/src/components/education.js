@@ -65,4 +65,18 @@ class Education extends Component {
         })
     }
 
-    
+    onSubmitEducation = e => {
+        e.preventDefault();
+        this.setState({
+            education: this.state.education.concat({
+                id: uniqid(),
+                degree: this.state.degreeType,
+                major: this.state.major,
+                school: this.state.school,
+                date: this.state.startDate + ' - ' + this.state.endDate,
+                location: this.state.location
+
+            }),
+            : '',
+
+        })
