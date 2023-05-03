@@ -77,6 +77,21 @@ class Education extends Component {
                 location: this.state.location
 
             }),
-            : '',
-
+            degreeType: '',
+            major: '',
+            school: '',
+            startDate: '',
+            endDate: '',
+            location: ''
         })
+
+        this.toggleEdit();
+    }
+
+    toggleEdit = () => {
+        this.setState(prevState => ({
+            edit: !prevState.edit
+        }))
+    }
+
+    
