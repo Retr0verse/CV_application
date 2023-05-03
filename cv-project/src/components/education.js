@@ -33,3 +33,36 @@ class Education extends Component {
         this.setState({
             degreeType: e.target.value
         })
+    }
+
+    handleMajorChange = e => {
+        this.setState({
+            major: e.target.value
+        })
+    }
+
+    handleSchoolChange = e => {
+        this.setState({
+            school: e.target.target
+        })
+    }
+
+    handleStartDateChange = e => {
+        this.setState({
+            startDate: e.target.value
+        })
+    }
+
+    handleEndDateChange = e => {
+        this.setState({
+            endDate: e.target.value
+        })
+    }
+
+    handleLocationChange = e => {
+        this.setState({
+            location: e.target.value
+        })
+    }
+
+    
