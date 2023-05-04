@@ -160,7 +160,7 @@ class Education extends Component {
                                         type="text"
                                         value={school}
                                         onChange={this.handleSchoolChange}
-                                        />
+                                    />
                                     <label htmlFor="start-date">Start Date</label>
                                     <input
                                         id="start-date"
@@ -168,24 +168,39 @@ class Education extends Component {
                                         value={startDate}
                                         placeholder="Month &amp; Year"
                                         onChange={this.handleStartDateChange}
-                                        />
+                                    />
                                     <label htmlFor="end-date">End Date</label>
-                                    <input 
+                                    <input
                                         id="end-date"
                                         type="text"
                                         value={endDate}
                                         placeholder="Month &amp; Year"
                                         onChange={this.handleEndDateChange}
-                                        />
+                                    />
                                     <label htmlFor="location">Location</label>
                                     <input
                                         id="location"
                                         type="text"
                                         value={location}
                                         onChange={this.handleLocationChange}
-                                        />
-                                    
-                                </form>}
-
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={this.onSubmitEducation}
+                                    >
+                                        Add Education
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={this.toggleEdit}
+                                    >
+                                        Close
+                                    </button>
+                                </form>
+                            }
                         </div>
-    }
+                    )
+                }
+            }
+
+                export default Education;
