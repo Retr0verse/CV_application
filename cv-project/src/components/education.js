@@ -94,4 +94,32 @@ class Education extends Component {
         }))
     }
 
-    
+    handleRemove = key => {
+        const newEdu = this.state.education.filter(education => education.id !== key)
+
+        this.setState({
+            education: newEdu
+        })
+    }
+
+    render() {
+        const {
+            degreeType,
+            major,
+            school,
+            startDate,
+            endDate,
+            location,
+            education,
+            edit
+        } = this.state;
+
+        return (
+            <div id="Education">
+                <h2>Education</h2>
+                {education.map(edu => {
+                    return (
+                        <div key={edu.id} onClick=
+                })}
+            </div>
+    }
