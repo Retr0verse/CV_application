@@ -119,7 +119,50 @@ class Education extends Component {
                 <h2>Education</h2>
                 {education.map(edu => {
                     return (
-                        <div key={edu.id} onClick=
+                        <div key={edu.id} onClick={() => this.handleRemove(edu.id)}>
+                            <div>
+                                <p className="education-degree">{edu.degree}</p>
+                                <p className="education-major">{edu.major}</p>
+                                <p className="education-school">{edu.school}</p>
+                                <p className="education-date">{edu.date}</p>
+                                <p className="education-location">{edu.location}</p>
+                            </div>
+                            )
                 })}
-            </div>
+
+                            <button
+                                className="edit-toggle"
+                                type="button"
+                                onClick={this.toggleEdit}
+                            >
+                                Add
+                            </button>
+
+                            {edit &&
+                                <form id="education-add" className="edit-form">
+                                    <label htmlFor="degree-type">Degree Type</label>
+                                    <input
+                                        id="degree-type"
+                                        type="text"
+                                        value={degreeType}
+                                        onChange={this.handleDegreeChange}
+                                    />
+                                    <label htmlFor="major">Major</label>
+                                    <input
+                                        id="major"
+                                        type="text"
+                                        value={major}
+                                        onChange={this.handleMajorChange}
+                                    />
+                                    <label htmlFor="school">School</label>
+                                    <input
+                                        id="school"
+                                        type="text"
+                                        value={school}
+                                        onChange={this.handleSchoolChange}
+                                        />
+                                    
+                                </form>}
+
+                        </div>
     }
