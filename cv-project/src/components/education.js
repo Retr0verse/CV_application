@@ -127,80 +127,81 @@ class Education extends Component {
                                 <p className="education-date">{edu.date}</p>
                                 <p className="education-location">{edu.location}</p>
                             </div>
-                            )
-                })}
-
-                            <button
-                                className="edit-toggle"
-                                type="button"
-                                onClick={this.toggleEdit}
-                            >
-                                Add
-                            </button>
-
-                            {edit &&
-                                <form id="education-add" className="edit-form">
-                                    <label htmlFor="degree-type">Degree Type</label>
-                                    <input
-                                        id="degree-type"
-                                        type="text"
-                                        value={degreeType}
-                                        onChange={this.handleDegreeChange}
-                                    />
-                                    <label htmlFor="major">Major</label>
-                                    <input
-                                        id="major"
-                                        type="text"
-                                        value={major}
-                                        onChange={this.handleMajorChange}
-                                    />
-                                    <label htmlFor="school">School</label>
-                                    <input
-                                        id="school"
-                                        type="text"
-                                        value={school}
-                                        onChange={this.handleSchoolChange}
-                                    />
-                                    <label htmlFor="start-date">Start Date</label>
-                                    <input
-                                        id="start-date"
-                                        type="text"
-                                        value={startDate}
-                                        placeholder="Month &amp; Year"
-                                        onChange={this.handleStartDateChange}
-                                    />
-                                    <label htmlFor="end-date">End Date</label>
-                                    <input
-                                        id="end-date"
-                                        type="text"
-                                        value={endDate}
-                                        placeholder="Month &amp; Year"
-                                        onChange={this.handleEndDateChange}
-                                    />
-                                    <label htmlFor="location">Location</label>
-                                    <input
-                                        id="location"
-                                        type="text"
-                                        value={location}
-                                        onChange={this.handleLocationChange}
-                                    />
-                                    <button
-                                        type="button"
-                                        onClick={this.onSubmitEducation}
-                                    >
-                                        Add Education
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={this.toggleEdit}
-                                    >
-                                        Close
-                                    </button>
-                                </form>
-                            }
                         </div>
                     )
-                }
-            }
+                })}
 
-                export default Education;
+                <button
+                    className="edit-toggle"
+                    type="button"
+                    onClick={this.toggleEdit}
+                >
+                    Add
+                </button>
+
+                {edit &&
+                    <form id="education-add" className="edit-form">
+                        <label htmlFor="degree-type">Degree Type</label>
+                        <input
+                            id="degree-type"
+                            type="text"
+                            value={degreeType}
+                            onChange={this.handleDegreeChange}
+                        />
+                        <label htmlFor="major">Major</label>
+                        <input
+                            id="major"
+                            type="text"
+                            value={major}
+                            onChange={this.handleMajorChange}
+                        />
+                        <label htmlFor="school">School</label>
+                        <input
+                            id="school"
+                            type="text"
+                            value={school}
+                            onChange={this.handleSchoolChange}
+                        />
+                        <label htmlFor="start-date">Start Date</label>
+                        <input
+                            id="start-date"
+                            type="text"
+                            value={startDate}
+                            placeholder="Month &amp; Year"
+                            onChange={this.handleStartDateChange}
+                        />
+                        <label htmlFor="end-date">End Date</label>
+                        <input
+                            id="end-date"
+                            type="text"
+                            value={endDate}
+                            placeholder="Month &amp; Year"
+                            onChange={this.handleEndDateChange}
+                        />
+                        <label htmlFor="location">Location</label>
+                        <input
+                            id="location"
+                            type="text"
+                            value={location}
+                            onChange={this.handleLocationChange}
+                        />
+                        <button
+                            type="button"
+                            onClick={this.onSubmitEducation}
+                        >
+                            Add Education
+                        </button>
+                        <button
+                            type="button"
+                            onClick={this.toggleEdit}
+                        >
+                            Close
+                        </button>
+                    </form>
+                }
+            </div>
+        )
+    }
+}
+
+export default Education;

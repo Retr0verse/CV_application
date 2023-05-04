@@ -71,10 +71,10 @@ class Contact extends Component {
                     <p>{city ? city : 'San Antonio, TX'}</p>
                 </div>
                 <div className="linkedin">
-                    <a href={linkedin ? linkedin : 'linkedin.com/in/user-name'}>LinkedIn</a>
+                    <a href={LinkedIn ? LinkedIn : 'linkedin.com/in/user-name'}>LinkedIn</a>
                 </div>
                 <div className="github">
-                    <a href={github ? github : 'github.com/username'}>Github</a>
+                    <a href={Github ? Github : 'github.com/username'}>Github</a>
                 </div>
                 < button className="edit-toggle" type="button" onClick={this.toggleEdit}>Edit</button>
 
@@ -115,4 +115,4 @@ class Contact extends Component {
         )
                 }
             }
-        export default Contact
+        export default Contact;
