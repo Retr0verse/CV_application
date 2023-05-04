@@ -161,6 +161,29 @@ class Education extends Component {
                                         value={school}
                                         onChange={this.handleSchoolChange}
                                         />
+                                    <label htmlFor="start-date">Start Date</label>
+                                    <input
+                                        id="start-date"
+                                        type="text"
+                                        value={startDate}
+                                        placeholder="Month &amp; Year"
+                                        onChange={this.handleStartDateChange}
+                                        />
+                                    <label htmlFor="end-date">End Date</label>
+                                    <input 
+                                        id="end-date"
+                                        type="text"
+                                        value={endDate}
+                                        placeholder="Month &amp; Year"
+                                        onChange={this.handleEndDateChange}
+                                        />
+                                    <label htmlFor="location">Location</label>
+                                    <input
+                                        id="location"
+                                        type="text"
+                                        value={location}
+                                        onChange={this.handleLocationChange}
+                                        />
                                     
                                 </form>}
 
