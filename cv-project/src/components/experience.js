@@ -12,11 +12,16 @@ class Experience extends Component {
             endDate: '',
             location: '',
             details: '',
+
             experience [
                 {
                     id: uniqid(),
-                    role: 'Software Engineer',
-                    company: ''
+                    role: 'Software Developer',
+                    company: 'Arasaka',
+                    date: 'June 2021 - Current',
+                    location: '/ Los Angeles, CA',
+                    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.'
+
                 }
             ]
     }
@@ -25,4 +30,4 @@ class Experience extends Component {
 
 
 
-export default Experience;
+        export default Experience;
