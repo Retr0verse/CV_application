@@ -12,6 +12,13 @@ class Experience extends Component {
             endDate: '',
             location: '',
             details: '',
+            experience [
+                {
+                    id: uniqid(),
+                    role: 'Software Engineer',
+                    company: ''
+                }
+            ]
     }
 
 
