@@ -13,7 +13,7 @@ class Experience extends Component {
             location: '',
             details: '',
 
-            experience [
+            experience: [
                 {
                     id: uniqid(),
                     role: 'Software Developer',
