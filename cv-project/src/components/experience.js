@@ -107,7 +107,35 @@ class Experience extends Component {
             this.toggleEdit()
         }
 
+        toggleEdit = () => {
+            this.setState(prevState => ({
+                edit: !prevState.edit
+            }))
+        }
 
+        handleRemove = () => {
+            const newExp = this.state.experience.filter(exp => exp.id !== key)
 
+            this.setState({
+                experience: newExp
+            })
+        }
+
+        render() {
+            const {
+                role,
+                company,
+                startDate,
+                endDate,
+                location,
+                details,
+                experience,
+                edit
+            } = this.state;
+        
+
+            return (
+                
+            )
 
         export default Experience;
