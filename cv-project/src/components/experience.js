@@ -17,11 +17,17 @@ class Experience extends Component {
                 {
                     id: uniqid(),
                     role: 'Software Developer',
-                    company: 'Arasaka',
+                    company: 'Nudle',
                     date: 'June 2021 - Current',
                     location: '/ Los Angeles, CA',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.'
 
+                },
+                {
+                    id: uniqid(),
+                    role: 'Junior Web Developer',
+                    company: 'Blume',
+                    date: 'September 2019 - June 2021'
                 }
             ]
     }
