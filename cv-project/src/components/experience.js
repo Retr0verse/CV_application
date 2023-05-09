@@ -76,7 +76,7 @@ class Experience extends Component {
         this.setState({
             location: e.target.value
         })
-
+    }
         handleDetailsChange = e => {
             this.setState({
                 details: e.target.value
