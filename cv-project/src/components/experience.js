@@ -136,7 +136,7 @@ class Experience extends Component {
 
             return (
                 <div id="Experience">
-                    <h2>Work Experience</h2>
+                    <h2>WORK EXPERIENCE</h2>
                     {experience.map(exp => {
                         return(
                             <div key={exp.id} onClick={() => this.handleRemove(exp.id)}>

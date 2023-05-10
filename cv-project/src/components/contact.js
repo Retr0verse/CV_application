@@ -60,7 +60,7 @@ class Contact extends Component {
 
         return (
             <div id="Contact">
-                <h3>CONTACT</h3>
+                <h2>CONTACT</h2>
                 <div className="email">
                     <p>{email ? email : 'john@devjobs.com'}</p>
                 </div>
