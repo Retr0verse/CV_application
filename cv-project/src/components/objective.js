@@ -27,7 +27,8 @@ render() {
 
     return (
         <div id="Objective">
-            
+            <h2>Objective</h2>
+            <p className="objective"></p>
         </div>
     )
 }
