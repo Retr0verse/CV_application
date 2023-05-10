@@ -14,32 +14,37 @@ class Skills extends Component {
                 },
                 {
                     id: uniqid(),
-                    skill: ''
+                    skill: 'JavaScript(React, Node.js)',
                 },
                 {
                     id: uniqid(),
-                    skill: ''
+                    skill: 'HTML/CSS'
                 },
                 {
                     id: uniqid(),
-                    skill: ''
+                    skill: 'Python(Django)',
                 },
                 {
                     id: uniqid(),
-                    skill: ''
+                    skill: 'C#'
                 },
                 {
                     id: uniqid(),
-                    skill: ''
+                    skill: 'SQL(MySQL)',
                 },
                 {
                     id: uniqid(),
-                    skill: ''
+                    skill: 'Java'
                 }
             ],
             edit: false
         }
     }
 
-    
+    handleSkillChange = e => {
+        this.setState({
+            skill: e.target.value
+        })
 }
+
+onSubmitSkill = e => {
