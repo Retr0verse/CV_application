@@ -28,7 +28,9 @@ render() {
     return (
         <div id="Objective">
             <h2>Objective</h2>
-            <p className="objective"></p>
+            <p className="objective">{objective ? objective : 'Analytical-minded and creative team player with a strong background in designing, planning, and maintenance of software programs, desirous of the role of Software Engineer at DC Inc. to hone my technical skills and expertise along with designing creative software and products as per the clients’ needs and enhance the reputation of your organisation.' }</p>
+            <button
+        
         </div>
     )
 }
