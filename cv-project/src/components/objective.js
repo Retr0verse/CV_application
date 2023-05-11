@@ -23,7 +23,7 @@ toggleEdit = () => {
 }
 
 render() {
-    const { objective } = this.state;
+    const { objective, edit } = this.state;
 
     return (
         <div id="Objective">

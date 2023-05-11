@@ -113,7 +113,7 @@ class Experience extends Component {
             }))
         }
 
-        handleRemove = () => {
+        handleRemove = key => {
             const newExp = this.state.experience.filter(exp => exp.id !== key)
 
             this.setState({
