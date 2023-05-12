@@ -1,3 +1,22 @@
 html {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 850px;
+    margin: auto;
+    border: black 6px solid;
+    margin-top: 5em;
+}
+#CV {
+    display: flex;
+}
+#Title {
+    border: black 2px solid;
+    width: 100%;
+}
+#Rightside {
+    border: black 2px solid;
+}
+
+#Leftside {
+    border: black 2px solid;
+
 }
