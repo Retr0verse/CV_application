@@ -7,10 +7,12 @@ html {
 }
 #CV {
     display: flex;
+    flex-direction: row;
 }
 #Title {
     border: black 2px solid;
     width: 100%;
+    text-align: center;
 }
 #Rightside {
     border: black 2px solid;
