@@ -6,13 +6,15 @@ html {
     margin-top: 5em;
 }
 #CV {
-    display: flex;
-    flex-direction: row;
+
 }
 #Title {
     border: black 2px solid;
     width: 100%;
     text-align: center;
+}
+#main-container {
+    display: flex;
 }
 #Rightside {
     border: black 2px solid;

@@ -8,8 +8,11 @@ class CV extends Component {
         return (
             <div id="CV">
                 <Title />
+
+                <div id="main-container">
                 <Leftside />
                 <Rightside />
+                </div>
             </div>
         )
     }
