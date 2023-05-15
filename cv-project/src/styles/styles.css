@@ -13,6 +13,7 @@ html {
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
+    border-bottom: white;
 }
 #main-container {
     display: flex;
@@ -22,11 +23,15 @@ html {
     padding-left: 40px;
     padding-right: 40px;
     inline-size: auto;
+    border-top: white;
+    border-right: white;
 }
 
 #Leftside {
     border: black 2px solid;
+    border-top: white;
     padding-left: 40px;
     padding-right: 40px;
-    inline-size: 1200px;
+    inline-size: 600px;
+    text-align: right;
 }
