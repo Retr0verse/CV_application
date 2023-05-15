@@ -4,23 +4,29 @@ html {
     margin: auto;
     border: black 6px solid;
     margin-top: 5em;
+    font-size: 13px;
 }
 #CV {
-
 }
 #Title {
     border: black 2px solid;
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
 }
 #main-container {
     display: flex;
 }
 #Rightside {
     border: black 2px solid;
+    padding-left: 40px;
+    padding-right: 40px;
+    inline-size: auto;
 }
 
 #Leftside {
     border: black 2px solid;
-
+    padding-left: 40px;
+    padding-right: 40px;
+    inline-size: 1200px;
 }
