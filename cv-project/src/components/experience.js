@@ -144,7 +144,8 @@ class Experience extends Component {
                                     <p className="experience-role">{exp.role}</p>
                                     <p className="experience-company">{exp.company}</p>
                                     <p className="experience-date">{exp.date}{exp.location}</p>
-                                    <p className="experience-details">{exp.details}</p>
+                                 <ul>  <li className="experience-details">{exp.details}</li>
+                                 </ul> 
                                 </div>
                             </div>
                         )

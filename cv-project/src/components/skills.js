@@ -80,15 +80,15 @@ class Skills extends Component {
     return (
       <div id="Skills">
         <h2>Skills</h2>
-        <ul>
+        <div>
           {skills.map((skill) => {
             return (
-              <li key={skill.id} onClick={() => this.handleRemove(skill.id)}>
+              <p key={skill.id} onClick={() => this.handleRemove(skill.id)}>
                 {skill.skill}
-              </li>
+              </p>
             );
           })}
-        </ul>
+        </div>
 
         <button className="edit-toggle" type="button" onClick={this.toggleEdit}>
           Add
