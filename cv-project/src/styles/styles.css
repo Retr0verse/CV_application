@@ -29,6 +29,8 @@ html {
     border-right: white;
     padding-bottom: 40px;
     border-bottom: white;
+    border-top: 10px;
+
 }
 
 #Leftside {
@@ -44,4 +46,11 @@ html {
 }
 #name {
     border: black 1px solid;
+}
+
+#Contact {
+    margin-top: -18px;
+}
+#Experience {
+    margin-top: -18px;
 }
