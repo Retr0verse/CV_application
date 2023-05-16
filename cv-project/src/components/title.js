@@ -38,7 +38,7 @@ const { name, role, edit } = this.state;
 
 return(
     <div id="Title">
-        <h1>{name ? name : 'Your name'}</h1>
+        <h1 className="fullname">{name ? name : 'Your name'}</h1>
         <p className="role">{role ? role : 'Your role'}</p>
         <button
             className="edit-toggle"

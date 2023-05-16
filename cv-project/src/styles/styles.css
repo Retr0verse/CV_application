@@ -60,5 +60,12 @@ html {
 }
 .role {
     border: black 1px solid;
-    background-color: rgb(234, 230, 230);
+    padding: 32px;
+    margin: auto;
+    background-color: rgb(240, 240, 240);
+    font-size: 20px; 
+}
+.fullname {
+    border:navy 2px solid;
+    padding: 2px;
 }
