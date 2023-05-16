@@ -21,7 +21,7 @@ html {
     display: flex;
 }
 #Rightside {
-    border: navy 1px solid;
+    border: navy 1.5px solid;
     padding-left: 30px;
     padding-right: 30px;
     inline-size: auto;
@@ -30,11 +30,12 @@ html {
     padding-bottom: 40px;
     border-bottom: white;
     border-top: 10px;
+ 
 
 }
 
 #Leftside {
-    border: navy 1px solid;
+    border: navy 1.5px solid;
     border-top: white;
     border-left: white;
     border-bottom: white;
@@ -43,6 +44,7 @@ html {
     inline-size: 600px;
     text-align: right;
     padding-bottom: 40px;
+
 }
 #name {
     border: black 1px solid;
@@ -53,4 +55,7 @@ html {
 }
 #Experience {
     margin-top: -18px;
+}
+.experience-details {
+    margin-left: 25px;
 }

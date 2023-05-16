@@ -19,7 +19,7 @@ class Experience extends Component {
                     role: 'Software Developer',
                     company: 'Broca Tech',
                     date: 'June 2021 - Current',
-                    location: '/ London, UK',
+                    location: ' / London, UK',
                     /*add four bulleted sections for experience details per job*/
                     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.'
 
@@ -29,7 +29,7 @@ class Experience extends Component {
                     role: 'Junior Web Developer',
                     company: 'Nudle',
                     date: 'September 2019 - June 2021',
-                    location: '/ Palo Alto, CA',
+                    location: ' / Palo Alto, CA',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu vitae elementum curabitur vitae.'
 
                 },
@@ -38,7 +38,7 @@ class Experience extends Component {
                     role: 'Web Design Intern',
                     company: 'Nudle',
                     date: 'April 2019 - September 2019',
-                    location: '/ Palo Alto, CA',
+                    location: ' / Palo Alto, CA',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At lectus urna duis convallis convallis tellus id interdum.'
 
 
@@ -143,8 +143,7 @@ class Experience extends Component {
                                 <div>
                                     <p className="experience-role">{exp.role}</p>
                                     <p className="experience-company">{exp.company}</p>
-                                    <p className="experience-date">{exp.date}</p>
-                                    <p className="experience-location">{exp.location}</p>
+                                    <p className="experience-date">{exp.date}{exp.location}</p>
                                     <p className="experience-details">{exp.details}</p>
                                 </div>
                             </div>
