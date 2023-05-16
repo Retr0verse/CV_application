@@ -5,11 +5,13 @@ html {
     border: black 6px solid;
     margin-top: 5em;
     font-size: 13px;
+    padding-bottom: 30px;
+    margin-bottom: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
-#CV {
-}
+
 #Title {
-    border: black 2px solid;
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
@@ -19,19 +21,27 @@ html {
     display: flex;
 }
 #Rightside {
-    border: black 2px solid;
-    padding-left: 40px;
-    padding-right: 40px;
+    border: navy 1px solid;
+    padding-left: 30px;
+    padding-right: 30px;
     inline-size: auto;
     border-top: white;
     border-right: white;
+    padding-bottom: 40px;
+    border-bottom: white;
 }
 
 #Leftside {
-    border: black 2px solid;
+    border: navy 1px solid;
     border-top: white;
-    padding-left: 40px;
-    padding-right: 40px;
+    border-left: white;
+    border-bottom: white;
+    padding-left: 30px;
+    padding-right: 30px;
     inline-size: 600px;
     text-align: right;
+    padding-bottom: 40px;
+}
+#name {
+    border: black 1px solid;
 }
