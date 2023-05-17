@@ -1,5 +1,5 @@
 html {
-    font-family: 'Blinker', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 850px;
     margin: auto;
     border: black 6px solid;
@@ -7,8 +7,7 @@ html {
     font-size: 14px;
     padding-bottom: 30px;
     margin-bottom: 5em;
-    color:rgb(49, 48, 48);
-
+    color:rgb(53, 53, 53);
 }
 
 #Title {
@@ -57,7 +56,14 @@ html {
 #Experience {
     margin-top: -18px;
 }
-.experience-details {
+.experience-details { 
+    margin-left: 25px;
+}
+.experience-details2 { 
+    margin-left: 25px;
+}.experience-details3 { 
+    margin-left: 25px;
+}.experience-details4 { 
     margin-left: 25px;
 }
 .role {

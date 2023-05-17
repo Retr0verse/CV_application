@@ -12,6 +12,9 @@ class Experience extends Component {
             endDate: '',
             location: '',
             details: '',
+            details2: '',
+            details3: '',
+            details4: '',
 
             experience: [
                 {
@@ -21,8 +24,10 @@ class Experience extends Component {
                     date: 'June 2021 - Current',
                     location: ' / London, UK',
                     /*add four bulleted sections for experience details per job*/
-                    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.'
-
+                    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.',
+                    details2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.',
+                    details3:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.',
+                    details4:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.'
                 },
                 {
                     id: uniqid(),
@@ -30,8 +35,10 @@ class Experience extends Component {
                     company: 'Nudle',
                     date: 'September 2019 - June 2021',
                     location: ' / Palo Alto, CA',
-                    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu vitae elementum curabitur vitae.'
-
+                    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu vitae elementum curabitur vitae.',
+                    details2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.',
+                    details3:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.' ,
+                    details4:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.'
                 },
                 {
                     id: uniqid(),
@@ -39,8 +46,10 @@ class Experience extends Component {
                     company: 'Nudle',
                     date: 'April 2019 - September 2019',
                     location: ' / Palo Alto, CA',
-                    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At lectus urna duis convallis convallis tellus id interdum.'
-
+                    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At lectus urna duis convallis convallis tellus id interdum.',
+                    details2:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.',
+                    details3:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.',
+                    details4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui.'
 
                 }
             ],
@@ -82,6 +91,21 @@ class Experience extends Component {
                 details: e.target.value
             })
         }
+        handleDetails2Change = e => {
+            this.setState({
+                details2: e.target.value
+            })
+        }
+        handleDetails3Change = e => {
+            this.setState({
+                details3: e.target.value
+            })
+        }
+        handleDetails4Change = e => {
+            this.setState({
+                details4: e.target.value
+            })
+        }
 
         onSubmitExperience = e => {
             e.preventDefault();
@@ -92,7 +116,10 @@ class Experience extends Component {
                     company: this.state.company,
                     date: this.state.startDate + ' - ' + this.state.endDate,
                     location: this.state.location,
-                    details: this.state.details
+                    details: this.state.details,
+                    details2: this.state.details2,
+                    details3: this.state.details3,
+                    details4: this.state.details4
 
                 }),
                 role: '',
@@ -100,7 +127,10 @@ class Experience extends Component {
                 startDate: '',
                 endDate: '',
                 location: '',
-                details: ''
+                details: '',
+                details2: '',
+                details3: '',
+                details4: ''
 
             })
 
@@ -129,6 +159,9 @@ class Experience extends Component {
                 endDate,
                 location,
                 details,
+                details2,
+                details3,
+                details4,
                 experience,
                 edit
             } = this.state;
@@ -144,7 +177,12 @@ class Experience extends Component {
                                     <p className="experience-role">{exp.role}</p>
                                     <p className="experience-company">{exp.company}</p>
                                     <p className="experience-date">{exp.date}{exp.location}</p>
-                                 <ul>  <li className="experience-details">{exp.details}</li>
+                                 <ul>  
+                                 <li className="experience-details">{exp.details}</li>
+                                 <li className="experience-details2">{exp.details2}</li>
+                                 <li className="experience-details3">{exp.details3}</li>
+                                 <li className="experience-details4">{exp.details4}</li>
+
                                  </ul> 
                                 </div>
                             </div>
@@ -202,7 +240,27 @@ class Experience extends Component {
                     value={details}
                     onChange={this.handleDetailsChange}
                     />
-
+                    <label htmlFor="details2">Details 2</label>
+                    <input
+                    id="details2"
+                    type="text"
+                    value={details2}
+                    onChange={this.handleDetails2Change}
+                    />
+                    <label htmlFor="details3">Details 3</label>
+                    <input
+                    id="details3"
+                    type="text"
+                    value={details3}
+                    onChange={this.handleDetails3Change}
+                    />
+                    <label htmlFor="details4">Details 4</label>
+                    <input
+                    id="details4"
+                    type="text"
+                    value={details4}
+                    onChange={this.handleDetails4Change}
+                    />
                     <button 
                     type="button"
                     onClick={this.onSubmitExperience}

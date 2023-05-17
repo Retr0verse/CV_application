@@ -20,6 +20,8 @@ class Title extends Component {
         })
     }
 
+
+
     handleRoleChange = e => {
         this.setState({
             role: e.target.value
@@ -38,7 +40,7 @@ const { name, role, edit } = this.state;
 
 return(
     <div id="Title">
-        <h1 className="fullname">{name ? name : 'John Dev'}</h1>
+    <h1 className="fullname">{name ? name : 'JOHN DEV'}</h1>
         <p className="role">{role ? role : 'Software Developer'}</p>
         <button
             className="edit-toggle"
@@ -56,6 +58,7 @@ return(
                 type="text"
                 onChange={this.handleNameChange}
                 />
+
             <label htmlFor="role">Your role</label>
             <input
                 id="role"

@@ -1,4 +1,11 @@
 import React, { Component } from 'react';
+import { FaBeer } from 'react-icons/fa';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { BsGlobeAmericas } from 'react-icons/bs';
+import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
+
+
 
 class Contact extends Component {
     constructor() {
@@ -62,19 +69,19 @@ class Contact extends Component {
             <div id="Contact">
                 <h2>CONTACT</h2>
                 <div className="email">
-                    <p>{email ? email : 'john@devjobs.com'}</p>
+                    <p>{email ? email : 'john@devjobs.com'} <FaBeer /></p>
                 </div>
                 <div className="phone">
-                    <p>{phone ? phone : '555-551-8159'}</p>
+                    <p>{phone ? phone : '555-551-8159'} <BsFillTelephoneFill /></p>
                 </div>
                 <div className="city">
-                    <p>{city ? city : 'San Antonio, TX'}</p>
+                    <p>{city ? city : 'San Antonio, TX'} <BsGlobeAmericas /></p>
                 </div>
                 <div className="linkedin">
-                    <a href={LinkedIn ? LinkedIn : 'linkedin.com/in/user-name'}>LinkedIn</a>
+                    <a href={LinkedIn ? LinkedIn : 'linkedin.com/in/user-name'}>LinkedIn <AiFillLinkedin /></a>
                 </div>
                 <div className="github">
-                    <a href={Github ? Github : 'github.com/username'}>Github</a>
+                    <a href={Github ? Github : 'github.com/username'}>Github <AiFillGithub /></a>
                 </div>
                 < button className="edit-toggle" type="button" onClick={this.toggleEdit}>Edit</button>
 
