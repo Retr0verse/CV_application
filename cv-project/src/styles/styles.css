@@ -1,5 +1,5 @@
 html {
-    font-family:'Nunito', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 850px;
     margin: auto;
     border: black 6px solid;
@@ -51,6 +51,7 @@ html {
 
 #Contact {
     margin-top: -18px;
+
 }
 #Experience {
     margin-top: -18px;
@@ -78,3 +79,4 @@ html {
     position: relative;
 background-color: white;
 }
+

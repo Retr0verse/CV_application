@@ -116,7 +116,7 @@ class Education extends Component {
 
         return (
             <div id="Education">
-                <h2>Education</h2>
+                <h2>EDUCATION</h2>
                 {education.map(edu => {
                     return (
                         <div key={edu.id} onClick={() => this.handleRemove(edu.id)}>

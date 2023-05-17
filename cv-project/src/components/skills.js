@@ -79,7 +79,7 @@ class Skills extends Component {
 
     return (
       <div id="Skills">
-        <h2>Skills</h2>
+        <h2>SKILLS</h2>
         <div>
           {skills.map((skill) => {
             return (
