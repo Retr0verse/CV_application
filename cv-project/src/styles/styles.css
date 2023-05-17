@@ -1,12 +1,13 @@
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Blinker', Verdana, Geneva, Tahoma, sans-serif;
     max-width: 850px;
     margin: auto;
     border: black 6px solid;
     margin-top: 5em;
-    font-size: 13px;
+    font-size: 14px;
     padding-bottom: 30px;
     margin-bottom: 5em;
+    color:rgb(49, 48, 48);
 
 }
 
@@ -78,5 +79,10 @@ html {
     z-index: 1;
     position: relative;
 background-color: white;
+}
+
+.experience-role {
+    font-size: 17px;
+
 }
 
