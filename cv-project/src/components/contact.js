@@ -4,6 +4,7 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import { BsGlobeAmericas } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
+import { MdAlternateEmail } from 'react-icons/md';
 
 
 
@@ -69,7 +70,7 @@ class Contact extends Component {
             <div id="Contact">
                 <h2>CONTACT</h2>
                 <div className="email">
-                    <p>{email ? email : 'john@devjobs.com'} <FaBeer /></p>
+                    <p>{email ? email : 'john@devjobs.com'} <MdAlternateEmail /></p>
                 </div>
                 <div className="phone">
                     <p>{phone ? phone : '555-551-8159'} <BsFillTelephoneFill /></p>
