@@ -92,3 +92,8 @@ background-color: white;
 
 }
 
+.edit-form {
+    display: grid;
+    text-align: left;
+}
+
