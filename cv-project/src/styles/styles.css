@@ -98,3 +98,10 @@ background-color: white;
     max-width: 250px;
 }
 
+button {
+    border-radius: 0%;
+    display: none;
+}
+.edit-toggle:hover {
+    display: inline-block;
+}
