@@ -81,9 +81,11 @@ class Contact extends Component {
                 <div className="linkedin">
                     <a href={LinkedIn ? LinkedIn : 'linkedin.com/in/user-name'}>LinkedIn <AiFillLinkedin /></a>
                 </div>
+                <br></br>
                 <div className="github">
                     <a href={Github ? Github : 'github.com/username'}>Github <AiFillGithub /></a>
                 </div>
+                <br></br>
                 < button className="edit-toggle" type="button" onClick={this.toggleEdit}>Edit</button>
 
                 {edit &&
@@ -106,13 +108,13 @@ class Contact extends Component {
                     type="text"
                     onChange={this.handleCityChange}
                     />
-                    <label htmlFor="linkedin">linkedin</label>
+                    <label htmlFor="linkedin">linkedin URL</label>
                     <input 
                     id="linkedin"
                     type="link"
                     onChange={this.handleLinkedInChange}
                     />
-                    <label htmlFor="github">github</label>
+                    <label htmlFor="github">github URL</label>
                     <input
                     id="github"
                     type="link"
