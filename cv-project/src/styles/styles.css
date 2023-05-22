@@ -98,9 +98,10 @@ background-color: white;
     max-width: 250px;
 }
 
-.edit-toggle{
+button{
     display: none;
+
 }
 button:hover + .edit-toggle, .edit-toggle:hover {
-    display: inline-block;
+    display:flex;
 }
