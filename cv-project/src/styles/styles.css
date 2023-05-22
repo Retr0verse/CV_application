@@ -98,10 +98,15 @@ background-color: white;
     max-width: 250px;
 }
 
-button{
-    display: none;
+.edit-toggle{
+    width: 1px;
+    height: 1px;
+    font-size: 0px;
 
 }
-button:hover + .edit-toggle, .edit-toggle:hover {
-    display:flex;
+.edit-toggle:hover {
+    width: 45px;
+    height: 25px;
+    font-size: 15px;
+
 }
