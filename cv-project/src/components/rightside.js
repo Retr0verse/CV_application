@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Experience from './Experience';
+import Experience from './experience';
 
 class Rightside extends Component {
     render() {

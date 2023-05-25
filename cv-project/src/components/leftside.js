@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Contact from './Contact';
-import Objective from './Objective';
-import Education from './Education';
-import Skills from './Skills';
+import Contact from './contact';
+import Objective from './objective';
+import Education from './education';
+import Skills from './skills';
 
 class Leftside extends Component {
     render() {
