@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from './Title';
+import Title from './title';
 import Leftside from './Leftside';
 import Rightside from './Rightside';
 
