@@ -1,9 +1,9 @@
 # CV_application
 # React Resume App
 
-The React Resume Application is a professional and interactive tool designed to create visually appealing resumes. With a user-friendly interface, it allows users to effortlessly customize and present their professional information.
+#The React Resume Application is a professional and interactive tool designed to create visually appealing resumes. With a user-friendly interface, it allows users to effortlessly customize and present their professional information.
 
-Key Features
+#Key Features
 Click and Delete Sections: Easily remove sections from the resume with a single click, providing flexibility in tailoring the content to individual needs.
 Expanding Add and Edit Buttons: Conveniently add new sections or modify existing ones through intuitive expandable buttons, streamlining the resume creation process.
 Attractive Display: The application showcases resumes in a visually captivating manner, ensuring a polished and professional presentation.
