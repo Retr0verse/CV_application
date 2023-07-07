@@ -76,7 +76,7 @@ html {
     margin-right: -8px;
 }
 .fullname {
-    border:navy 2px solid;
+    border:navy 2px solid ;
     padding: 4px;
     margin-left: 260px;
     margin-right: 260px;
@@ -86,6 +86,12 @@ html {
     z-index: 1;
     position: relative;
 background-color: white;
+
+width:fit-content; 
+width:-webkit-fit-content; 
+width:-moz-fit-content;
+
+
 }
 
 .experience-role {
