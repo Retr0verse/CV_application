@@ -87,10 +87,6 @@ html {
     position: relative;
 background-color: white;
 
-width:fit-content; 
-width:-webkit-fit-content; 
-width:-moz-fit-content;
-
 
 }
 
@@ -117,8 +113,3 @@ width:-moz-fit-content;
     font-size: 15px;
 
 }
-@media (max-width: 768px) {
-    body {
-      font-size: 16px;
-    }
-  }
